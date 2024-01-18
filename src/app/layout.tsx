@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Tanstack Watch" on home and template "%s | Tanstack Watch',
   description: "Assignment app for practicing Next.js metadata features.",
   metadataBase: new URL(
-    `https://https://test08-pied.vercel.app/` ?? "http://localhost:3000"
+    `https://test08-pied.vercel.app/` ?? "http://localhost:3000"
   ),
 };
 
