@@ -25,7 +25,7 @@ export default async function Image({
     (
       <div
         style={{
-          fontSize: 42,
+          fontSize: 36,
           background: "white",
           width: "100%",
           height: "100%",
@@ -33,7 +33,7 @@ export default async function Image({
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
-          padding: 64,
+          padding: 40,
         }}
       >
         {/* TODO: Add content */}
@@ -43,13 +43,13 @@ export default async function Image({
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            gap: "2rem",
+            gap: 20,
             width: "100%",
           }}
         >
           <h2
             style={{
-              fontSize: "72px",
+              fontSize: 72,
               textAlign: "center",
             }}
           >
