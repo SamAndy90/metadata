@@ -1,11 +1,10 @@
-import { fetchRepo } from "@/utils";
+import { fetchAll } from "@/utils";
 import { ImageResponse } from "next/og";
 
 // Route segment config
 export const runtime = "edge";
 
 // Image metadata
-export const alt = "Repo Image";
 export const size = {
   width: 1200,
   height: 630,
@@ -14,13 +13,9 @@ export const size = {
 export const contentType = "image/png";
 
 // Image generation
-export default async function Image({
-  params, // read [repository] route slug
-}: {
-  params: { repository: string };
-}) {
+export default async function Image() {
   // TODO: Fetch data
-  const repo = await fetchRepo(params.repository);
+  const repo = await fetchAll();
   return new ImageResponse(
     (
       <div
@@ -56,8 +51,8 @@ export default async function Image({
           >
             TanStack Watch
           </h1>
-          <p>Last updated: TanStack/{repo.name}</p>
-          <p>Updated at: {repo.pushed_at.toUTCString()}</p>
+          <p>Last updated: TanStack/{repo[0].name}</p>
+          <p>Updated at: {repo[0].pushed_at.toUTCString()}</p>
         </div>
       </div>
     ),

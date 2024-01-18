@@ -33,7 +33,7 @@ export default async function Image({
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
-          padding: 40,
+          padding: 48,
         }}
       >
         {/* TODO: Add content */}
