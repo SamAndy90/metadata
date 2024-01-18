@@ -12,7 +12,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Tanstack Watch" on home and template "%s | Tanstack Watch',
   description: "Assignment app for practicing Next.js metadata features.",
-  metadataBase: new URL(process.env.DEPLOY_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(
+    `https://${process.env.VERCEL_URL}` ?? "http://localhost:3000"
+  ),
 };
 
 export default function RootLayout({
