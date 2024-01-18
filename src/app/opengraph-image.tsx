@@ -45,6 +45,7 @@ export default async function Image({
             gap: "2rem",
             textAlign: "center",
             width: "100%",
+            color: "black",
           }}
         >
           <h1
