@@ -23,35 +23,38 @@ export default async function Image({
   return new ImageResponse(
     (
       <div
-        style={{
-          fontSize: "42px",
-          background: "white",
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexDirection: "column",
-          padding: "64px",
-        }}
+        // style={{
+        //   fontSize: "42px",
+        //   background: "white",
+        //   width: "100%",
+        //   height: "100%",
+        //   display: "flex",
+        //   alignItems: "center",
+        //   justifyContent: "center",
+        //   flexDirection: "column",
+        //   padding: "64px",
+        // }}
+        className="text-5xl bg-white h-full flex flex-col justify-center items-center p-16 w-full"
       >
         {/* TODO: Add content */}
         <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "40px",
-            textAlign: "center",
-            width: "100%",
-            color: "black",
-          }}
+          // style={{
+          //   display: "flex",
+          //   flexDirection: "column",
+          //   justifyContent: "center",
+          //   alignItems: "center",
+          //   gap: "40px",
+          //   textAlign: "center",
+          //   width: "100%",
+          //   color: "black",
+          // }}
+          className="flex flex-col justify-center items-center gap-10 text-center w-full text-black"
         >
           <h1
-            style={{
-              fontSize: "72px",
-            }}
+            // style={{
+            //   fontSize: "72px",
+            // }}
+            className="text-7xl"
           >
             TanStack Watch
           </h1>
