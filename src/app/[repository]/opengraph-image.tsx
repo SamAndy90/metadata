@@ -66,7 +66,7 @@ export default async function Image({
           >
             <p>Stars: {repo.stargazers_count}</p>
             <p>Forks: {repo.forks_count}</p>
-            <p>Updated at: {repo.pushed_at.getTime()}</p>
+            <p>Updated at: {repo.pushed_at.toUTCString()}</p>
           </div>
         </div>
       </div>

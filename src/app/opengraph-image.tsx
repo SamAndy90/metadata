@@ -55,7 +55,7 @@ export default async function Image({
             TanStack Watch
           </h1>
           <p>Last updated: TanStack/{repo.name}</p>
-          <p>Updated at: {repo.pushed_at.getTime()}</p>
+          <p>Updated at: {repo.pushed_at.toUTCString()}</p>
         </div>
       </div>
     ),
