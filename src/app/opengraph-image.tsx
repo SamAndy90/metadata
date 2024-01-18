@@ -24,7 +24,7 @@ export default async function Image({
     (
       <div
         style={{
-          fontSize: 42,
+          fontSize: "42px",
           background: "white",
           width: "100%",
           height: "100%",
@@ -32,7 +32,7 @@ export default async function Image({
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
-          padding: 64,
+          padding: "64px",
         }}
       >
         {/* TODO: Add content */}
@@ -42,7 +42,7 @@ export default async function Image({
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            gap: "2rem",
+            gap: "40px",
             textAlign: "center",
             width: "100%",
             color: "black",
