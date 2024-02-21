@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     `https://${process.env.DEPLOY_URL}` ?? "http://localhost:3000"
   ),
+  openGraph: {
+    images: "./og-image.png",
+  },
 };
 
 export default function RootLayout({
