@@ -16,14 +16,7 @@ export const metadata: Metadata = {
     "https://metadata-eight.vercel.app/" ?? "http://localhost:3000"
   ),
   openGraph: {
-    url: "https://metadata-eight.vercel.app",
-    images: [
-      {
-        url: "https://metadata-eight.vercel.app/og.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: "./og.png",
   },
 };
 
