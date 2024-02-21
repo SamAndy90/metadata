@@ -10,14 +10,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 // TODO: Add static metadata export that sets title template and description (from README.md).
 export const metadata: Metadata = {
-  title: 'Tanstack Watch" on home and template "%s | Tanstack Watch',
-  description: "Assignment app for practicing Next.js metadata features.",
+  title: "Tanstack Watch %s | Tanstack Watch",
+  description: "App for practicing Next.js.",
   metadataBase: new URL(
     "https://metadata-eight.vercel.app/" ?? "http://localhost:3000"
   ),
-  openGraph: {
-    images: "./og.png",
-  },
 };
 
 export default function RootLayout({
