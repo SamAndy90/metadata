@@ -7,8 +7,6 @@ import Link from "next/link";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-
-// TODO: Add static metadata export that sets title template and description (from README.md).
 export const metadata: Metadata = {
   title: "Tanstack Watch %s | Tanstack Watch",
   description: "App for practicing Next.js.",
