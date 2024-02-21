@@ -16,6 +16,13 @@ export const metadata: Metadata = {
     "https://metadata-eight.vercel.app/" ?? "http://localhost:3000"
   ),
 };
+console.log({
+  vercel: process.env.VERCEL_URL,
+  next: process.env.NEXT_PUBLIC_VERCEL_URL,
+
+  v: process.env.VERCEL_ENV,
+  n: process.env.NEXT_PUBLIC_VERCEL_ENV,
+});
 
 export default function RootLayout({
   children,
